@@ -1,0 +1,63 @@
+html,
+body {
+  height: 100%;
+}
+body {
+  background-color: rgb(209, 209, 209);
+  margin: 0;
+  padding: 0px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+
+  /* para centralizar a div como neste caso ela esta dentro do body, pode utilizar as tags abaixo, tb coloque uma medida de 100% no seu html e body, pq o html é o pai do body; */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main-title {
+  color: #385555;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 18px;
+  list-style-type: none;
+  width: 90%;
+  max-width: 900px;
+}
+
+.list-item {
+  flex-basis: 250px;
+  background-color: white;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  background-image: url(imagens/thumb02.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.list-item__imagem img {
+  border-radius: 50%;
+  width: 80px;
+  margin-top: 100px;
+}
+.list-item__nome {
+  margin: 0;
+  font-size: 25px;
+  color: #385555;
+}
+
+.list-item__acao {
+  display: flex;
+  gap: 6px;
+  background: #e5e5e5;
+  padding: 16px;
+  justify-content: space-evenly;
+  border-radius: 5%;
+}
